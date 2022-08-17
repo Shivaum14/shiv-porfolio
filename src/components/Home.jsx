@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/profile.jpg";
 import { RiArrowRightLine } from "react-icons/ri";
+import { Link } from "react-scroll";
 
 function Home() {
 	return (
@@ -21,12 +22,17 @@ function Home() {
 						knowledge while contributing to complex large scale projects.
 					</p>
 					<div>
-						<button className="text-white w-fit px-6 py-3 my-6 flex  items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer group">
+						<Link
+							to="portfolio"
+							smooth
+							duration={500}
+							className="text-white w-fit px-6 py-3 my-6 flex  items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer group"
+						>
 							Portfolio
 							<span className="group-hover:rotate-90 duration-300">
 								<RiArrowRightLine size={23} className="ml-1" />
 							</span>
-						</button>
+						</Link>
 					</div>
 				</div>
 				<div>
